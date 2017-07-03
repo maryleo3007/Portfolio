@@ -8,17 +8,6 @@ body{
   height: 100vh;
   width: 100%;
 }
-.bg-image{
-	margin: 0;
-	background-image: url(../assets/img/mockup2.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 .navbar{
   font-size: 1.2em;
 }
@@ -42,21 +31,6 @@ body{
 .anchorlogo{
   padding: 0px 28px 0px 0px!important;
 }
-.titleintro{
-  color: #ffffff;
-  position: absolute;
-  top: 190px;
-  left: 5%;
-  text-align: center;
-}
-.titleintro h1{
-  font-size: 5.8rem;
-  font-weight: bold;
-}
-.titleintro h3{
-  font-size: 2.1rem;
-  font-weight: bold;
-}
 .btn-primary{
   background-color: #3498DB!important;
   border-radius: 35px;!important;
@@ -67,21 +41,7 @@ body{
   margin-top: 28px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 748px) {
-  .hero-park{
-    left: -200px;
-  }
   .titleintro img{
     width: 120px;
     margin-left: 38%;
@@ -104,27 +64,5 @@ body{
   .div-contenedor-bg{
     width: 100%;
     height: 450px;
-  }
-  .hero-bg{
-    top: 40%;
-  	background-position: right bottom;
-  }
-  .hero-park{
-    bottom: -160px;
-    left: -170px;
-  }
-  .hero-bench{
-    bottom: -160px;
-    left: 90%;
-  }
-  .hero-castle{
-    bottom: -160px;
-  }
-  .ourpromise{
-    padding-top: 200px!important;
-  }
-  .histoty-tertimonio_girl{
-    padding: 0% 9%;
-    text-align: center;
   }
 }
