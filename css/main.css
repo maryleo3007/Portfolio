@@ -3,10 +3,18 @@ body{
   box-sizing: border-box;
   background-color: #ededed !important;
 }
-.bg-color{
+/*.bg-color{
   background-color: rgba(76,75,75,0.3);
   height: 100vh;
   width: 100%;
+}*/
+.contenedor{
+  height: 95vh;
+  overflow: hidden;
+  background-color: rgba(125,114,113,0.5);
+}
+.owl-carousel .owl-item img {
+    width: auto;
 }
 .navbar{
   font-size: 1.2em;
@@ -25,20 +33,11 @@ body{
   left: 8%;
 }
 .neatlogo{
-  width: 90px;
+  width: 60px;
   vertical-align: middle;
 }
 .anchorlogo{
   padding: 0px 28px 0px 0px!important;
-}
-.btn-primary{
-  background-color: #3498DB!important;
-  border-radius: 35px;!important;
-  padding: 14px 42px!important;
-  border: none;
-  font-weight: 600;
-  font-size: 1.5em;
-  margin-top: 28px;
 }
 
 @media only screen and (max-width: 748px) {
