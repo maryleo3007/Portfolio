@@ -2,7 +2,7 @@
 body{
   margin: 0;
   box-sizing: border-box;
-  background-color: #ededed !important;
+  background-color: #ffffff !important;
 }
 .bg-grey{
   background-color: #F1F1F1;
@@ -20,8 +20,6 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  height: 100vh;
-
 }
 .itemImg2{
   position: relative;
@@ -29,7 +27,6 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  height: 100vh;
 }
 .itemImg3{
   position: relative;
@@ -37,10 +34,9 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  height: 100vh;
 }
 .contenedor{
-  height: 99vh;
+  height: 90vh;
   overflow: hidden;
   background-color: rgba(125,114,113,0.5);
 }
@@ -56,7 +52,7 @@ body{
   color: #ffffff;
 }
 .anchorNav:hover{
-  color: #C50000;
+  color: #ED4933;
   background-color: transparent!important;
 }
 .header-nav{
@@ -134,8 +130,9 @@ body{
 /*seccion  about*/
 
 #about{
-  height: 90vh;
+  height: 130vh;
   color: #666666;
+  background-color: #ffffff;
 }
 .description-about{
   width: 40%;
@@ -148,8 +145,22 @@ body{
   font-size: 1.2em;
       line-height: 1.6;
 }
+.ul-skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.ul-skills li{
+  list-style: none;
+  width: 100px;
+  margin: 10px;
+}
 
 /*portafolio*/
+#portafolio{
+  background-color: #F1F1F1;
+}
 .col-spm{
   padding: 0;
   margin: 0;
