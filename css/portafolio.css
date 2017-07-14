@@ -1,0 +1,96 @@
+.content-figure-portfolio {
+	overflow: hidden;
+	margin: 0;
+	padding: 0 0 0 0;
+	width: 100%;
+	text-align: center;
+}
+.content-figure-portfolio figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	margin: -0.135em;
+	width: 33.333%;
+	height: 400px;
+	background: #EEEEEE;
+	text-align: center;
+	cursor: pointer;
+}
+.content-figure-portfolio figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+.content-figure-portfolio figure figcaption {
+	padding: 0.2em;
+	color: #fff;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.content-figure-portfolio figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.content-figure-portfolio figure .description-figure,
+.content-figure-portfolio figure .title-figure {
+	margin: 0;
+}
+figure.figure-portafolio figcaption {
+	top: auto;
+	bottom: 0;
+	padding: 1em;
+	height: 10.75em;
+	background: #fff;
+	color: #3c4a50;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+figure.figure-portafolio .title-figure {
+	position: absolute;
+	bottom: 13em;
+	padding: 0.1em;
+	color: #fff;
+	font-size: 90%;
+	opacity: 1;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+figure.figure-portafolio .description-figure {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+}
+figure.figure-portafolio:hover .title-figure {
+	opacity: 1;
+}
+figure.figure-portafolio:hover figcaption,
+figure.figure-portafolio:hover .description-figure {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+figure.figure-portafolio:hover .description-figure {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+@media screen and (max-width: 69.5em) {
+	.content-figure-portfolio figure {
+		width: 50%;
+	}
+	.content-figure-portfolio figure figcaption {
+		font-size: 90%;
+	}
+}
+@media screen and (max-width: 41.5em) {
+	.content-figure-portfolio figure {
+		width: 100%;
+	}
+}

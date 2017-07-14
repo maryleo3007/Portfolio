@@ -2,10 +2,22 @@
 body{
   margin: 0;
   box-sizing: border-box;
-  background-color: #ededed !important;
+  background-color: #ffffff !important;
+}
+h2{
+  font-size: 2.8em;
+  margin:2.1em 0 1.6rem;
+  color: #F05941;
+  font-weight: 600;
 }
 .bg-grey{
   background-color: #F1F1F1;
+}
+.color-org{
+  color: #F05941;
+}
+.border-blue{
+  border-bottom: 4px solid #2F1B41
 }
 .bg-item{
   background-color: rgba(76,75,75,0.6);
@@ -20,8 +32,6 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  height: 100vh;
-
 }
 .itemImg2{
   position: relative;
@@ -29,7 +39,6 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  height: 100vh;
 }
 .itemImg3{
   position: relative;
@@ -37,40 +46,16 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center bottom;
-  height: 100vh;
 }
 .contenedor{
-  height: 99vh;
+  height: 95vh;
   overflow: hidden;
   background-color: rgba(125,114,113,0.5);
 }
 .owl-carousel .owl-item img {
     width: auto;
 }
-.navbar{
-  margin-top: 15px;
-  font-size: 1.2em;
-}
-.anchorNav{
-  font-weight: 600;
-  color: #ffffff;
-}
-.anchorNav:hover{
-  color: #C50000;
-  background-color: transparent!important;
-}
-.header-nav{
-  position: absolute;
-  top: 64px;
-  left: 8%;
-}
-.neatlogo{
-  width: 50px;
-  vertical-align: middle;
-}
-.anchorlogo{
-  padding: 0px 28px 0px 0px!important;
-}
+
 .myName{
   color: #FFFDEF;
   font-family: 'Pacifico', cursive;
@@ -120,7 +105,7 @@ body{
     padding: 14px 49px!important;
     font-weight: 600;
     font-size: 1.2em;
-    margin-top: 28px;
+    margin-top: 0.3em;
   }
   .contenedor-bg{
     width: 100%;
@@ -134,22 +119,36 @@ body{
 /*seccion  about*/
 
 #about{
-  height: 90vh;
-  color: #666666;
+  height: 130vh;
+  color:#2F1B41;
+  background-color: #ffffff;
+  overflow: hidden;
 }
 .description-about{
   width: 40%;
   margin: auto;
 }
-#about h2{
-  font-size: 2.2em;
-}
 #about p{
   font-size: 1.2em;
-      line-height: 1.6;
+  line-height: 1.6;
+}
+.ul-skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.ul-skills li{
+  list-style: none;
+  width: 100px;
+  margin: 10px;
 }
 
 /*portafolio*/
+#portafolio{
+  background-color: #F1F1F1;
+  overflow: hidden;
+}
 .col-spm{
   padding: 0;
   margin: 0;
