@@ -55,7 +55,30 @@ h2{
 .owl-carousel .owl-item img {
     width: auto;
 }
-
+.navbar{
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+.anchorNav{
+  font-weight: 600;
+  color: #ffffff;
+}
+.anchorNav:hover{
+  color: #ED4933;
+  background-color: transparent!important;
+}
+.header-nav{
+  position: absolute;
+  top: 64px;
+  left: 8%;
+}
+.neatlogo{
+  width: 50px;
+  vertical-align: middle;
+}
+.anchorlogo{
+  padding: 0px 28px 0px 0px!important;
+}
 .myName{
   color: #FFFDEF;
   font-family: 'Pacifico', cursive;
@@ -131,6 +154,17 @@ h2{
 #about p{
   font-size: 1.2em;
   line-height: 1.6;
+}
+.ul-skills{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.ul-skills li{
+  list-style: none;
+  width: 100px;
+  margin: 10px;
 }
 .ul-skills{
   display: flex;
