@@ -125,12 +125,12 @@ nav.show {
   padding-left: 40%; }
   @media (max-width: 41.5em) {
     .bg-item {
-      padding-top: 35%;
-      padding-left: 25%; } }
+      padding-top: 40%;
+      padding-left: 20%; } }
   @media screen and (max-width: 69.5em) {
     .bg-item {
-      padding-top: 15%;
-      padding-left: 20%; } }
+      padding-top: 35%;
+      padding-left: 25%; } }
 
 .itemImg1 {
   position: relative;
@@ -165,13 +165,13 @@ nav.show {
   color: #FFFDEF;
   /*$pink-light*/
   font-family: "Pacifico", cursive;
-  font-size: 5.1em; }
-  @media screen and (max-width: 41.5em) {
-    .myName {
-      font-size: 3.8em; } }
+  font-size: 4.8em; }
   @media screen and (max-width: 69.5em) {
     .myName {
-      font-size: 4.3em; } }
+      font-size: 5.8em; } }
+  @media screen and (max-width: 41.5em) {
+    .myName {
+      font-size: 2.9em; } }
 
 .letter-spacing {
   width: 100%;
@@ -191,13 +191,13 @@ nav.show {
   @media (max-width: 41.5em) {
     .letter-spacing {
       margin-left: 5%;
-      top: calc(65% - 21px);
-      font: 300 26px/1 "Open sans condensed", sans-serif; } }
+      top: calc(55% - 21px);
+      font: 300 15px/1 "Open sans condensed", sans-serif; } }
   @media screen and (max-width: 69.5em) {
     .letter-spacing {
-      margin-left: 6%;
+      margin-left: 10%;
       top: calc(55% - 21px);
-      font: 300 60px/1 "Open sans condensed", sans-serif; } }
+      font: 300 40px/1 "Open sans condensed", sans-serif; } }
 
 @keyframes name {
   0% {
@@ -283,6 +283,7 @@ nav.show {
 /***************************PORTAFOLIO********************/
 #portafolio {
   background-image: url("../assets/img/bg3.png");
+  height: 100vh;
   overflow: hidden; }
 
 .content-figure-portfolio {
@@ -372,8 +373,19 @@ figure.figure-portafolio:hover .description-figure {
     width: 100%; } }
 /********************CONTACT***********************/
 #contact {
+  overflow: hidden; }
+
+.bg-item-contact {
+  background-color: rgba(76, 75, 75, 0.7);
+  height: 70vh;
+  width: 100%;
+  padding: 3em; }
+
+.itemImg1-contact {
+  position: relative;
   background-image: url("../assets/img/contact.jpeg");
-  overflow: hidden;
-  height: 70vh; }
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom; }
 
 /*# sourceMappingURL=main.css.map */
