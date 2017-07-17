@@ -288,7 +288,7 @@ $count:0;
   	margin: 0.3em;
   	width: 32.333%;
   	height: 400px;
-  	background: #EEEEEE;
+  	background: #000;
   	text-align: center;
   	cursor: pointer;
     img{
@@ -299,7 +299,6 @@ $count:0;
     }
     figcaption{
       padding: 0.2em;
-    	color: #fff;
     	font-size: 1.25em;
     	-webkit-backface-visibility: hidden;
     	backface-visibility: hidden;
@@ -320,8 +319,8 @@ figure.figure-portafolio figcaption {
 	bottom: 0;
 	padding: 1em;
 	height: 10.75em;
-	background: #fff;
-	color: #3c4a50;
+	background: $white;
+	color: $purple-dark;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,100%,0);
@@ -331,7 +330,7 @@ figure.figure-portafolio .title-figure {
 	position: absolute;
 	bottom: 13em;
 	padding: 0.1em;
-	color: #fff;
+	color: $white;
 	font-size: 90%;
 	opacity: 1;
 	-webkit-transition: opacity 0.35s;
