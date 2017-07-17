@@ -9,6 +9,7 @@ $(document).ready(function(){
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
     singleItem: true,
+    lazyLoad:true, 
     responsive: {
         0: {
             items: 1
