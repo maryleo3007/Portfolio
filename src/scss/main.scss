@@ -22,7 +22,7 @@ body{
   background-color: $white !important;
 }
 h2{
-  font-size: 2.8em;
+  font-size: 2.7em;
   margin:2.1em 0 1.6rem;
   color: $orange-light; //#F05941; /*:*/
   font-weight: 600;
@@ -80,7 +80,7 @@ h3{
 }
 /*MENU RESPONSIVE*/
 nav{
-  background: rgb(47,27,65);
+  background: $red-light;
   //position: absolute;
   left: -21em;
   height: 95vh;
@@ -108,7 +108,7 @@ nav.show{
   height: 70px;
   width: 100%;
   z-index: 30;
-  background-color: $purple-dark;
+  background-color: $red-light;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -184,7 +184,7 @@ $count:0;
   @media screen and (max-width: 69.5em) {
     margin-left: 10%;
     top: calc(55% - 21px);
-    font: 300 40px/1 "Open sans condensed", sans-serif; }
+    font: 300 35px/1 "Open sans condensed", sans-serif; }
 }
 @keyframes name{
   0%{
@@ -229,13 +229,13 @@ $count:0;
 #about{
   height: 130vh;
   color:$purple-dark; /*$purple-dark:*/
-  background-image: url('../assets/img/pexels.png');
+  background-image: url('../assets/img/82.jpg');
+  // background-color: $white;
   overflow: hidden;
   @media (max-width: 41.5em) { height: 180vh;}
   p{
     font-size: 1.5em;
     line-height: 1.4;
-    font-weight: 600;
     @media (max-width: 41.5em) {font-size: 1.2em;}
   }
 }
@@ -265,6 +265,7 @@ $count:0;
 /***************************PORTAFOLIO********************/
 #portafolio{
   background-image: url('../assets/img/bg3.png');
+  // background-color: $white;
   overflow: hidden;
   padding-bottom: 2em;
 }
