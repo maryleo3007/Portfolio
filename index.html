@@ -63,10 +63,13 @@
   </section>
   <!-- section about -->
   <section id="about" class="parallax">
-    <h2 class="text-center"> Desarrollador Web Front-end</h2>
-    <p class="text-center description-about">Bienvenido a mi portafolio online. Aquí encontrarás algunos de mis proyectos realizados en Laboratoria, y algunos proyectos personales donde pongo en práctica mis habilidades de desarrollador web front-end y donde podrás saber algo más acerca de mi.</p>
-    <hr>
-    <div class="container">
+    <div class="about-capa">
+      <h2 class="text-center"> Desarrollador Web Front-end</h2>
+      <p class="text-center description-about">
+        Bienvenido a mi portafolio online. Aquí encontrarás algunos de mis proyectos realizados en Laboratoria, donde pongo en práctica mis habilidades de desarrollador web front-end y donde podrás saber algo más acerca de mi.
+      </p>
+      <hr>
+      <div class="container">
       <div class="row">
         <div class="col-md-5 col-sm-12 col-xs-12">
           <h3 class="color-org">Sobre mi</h3>
@@ -77,7 +80,7 @@
           <img class="img-circle" src="assets/img/agile.png" alt="agile"/>
           <img class="img-circle" src="assets/img/team.png" alt="team"/>
         </div>
-        <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
+        <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12" data-anijs="if: scrool, on: window, do: zoomIn animated, to: img, before: scrollReveal">
           <h3 class="color-org">Habilidades</h3>
           <ul class="ul-skills">
             <li>
@@ -111,6 +114,7 @@
           </ul>
         </div>
       </div>
+    </div>
     </div>
   </section>
   <!-- section portafolio -->
@@ -187,8 +191,8 @@
       </div>
   </footer>
   <!-- scripts -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src='js/bootstrap.min.js'></script>
+  <script src="js/vendor/jquery-3.2.1.min.js"></script>
+  <script src='js/vendor/bootstrap.min.js'></script>
   <script src="owlCarousel/dist/owl.carousel.min.js"></script>
   <script src="js/owl.js" charset="utf-8"></script>
   <script src="js/scroll.js" charset="utf-8"></script>
