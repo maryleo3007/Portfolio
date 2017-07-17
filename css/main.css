@@ -283,7 +283,17 @@ nav.show {
       .ul-skills li {
         width: 65px;
         margin: 4px; } }
-
+    .ul-skills li img:hover {
+      animation: jiggle ease-in-out 400ms infinite; }
+@keyframes jiggle {
+  0% {
+    transform: none; }
+  25% {
+    transform: rotateZ(5deg); }
+  75% {
+    transform: rotateZ(-5deg); }
+  100% {
+    transform: none; } }
 /***************************PORTAFOLIO********************/
 #portafolio {
   background-image: url("../assets/img/bg3.png");

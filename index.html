@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="owlCarousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="owlCarousel/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
   <link rel="stylesheet" href="assets/fonts/style.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -77,38 +78,38 @@
             con interacciones y responsivas.
           </p>
           <h3 class="color-org">Mis reconocimientos en Laboratoria</h3>
-          <img class="img-circle" src="assets/img/agile.png" alt="agile"/>
-          <img class="img-circle" src="assets/img/team.png" alt="team"/>
+          <img class="img-circle" src="assets/img/agile.png" alt="agile" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat"/>
+          <img class="img-circle" src="assets/img/team.png" alt="team" data-anijs="if: scroll, on: window, do: rollIn animated, before: $scrollReveal repeat"/>
         </div>
-        <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12" data-anijs="if: scrool, on: window, do: zoomIn animated, to: img, before: scrollReveal">
+        <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
           <h3 class="color-org">Habilidades</h3>
           <ul class="ul-skills">
             <li>
-              <img class="img-responsive " src="assets/icons/scrum.png" alt="scrum"/>
+              <img class="img-responsive " src="assets/icons/scrum.png" alt="scrum" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal"/>
               <p class="p-skills text-center">Agile Scrum</p>
             </li>
             <li>
-              <img class="img-responsive " src="assets/icons/javacript.png" alt="Javascript"/>
+              <img class="img-responsive " src="assets/icons/javacript.png" alt="Javascript" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal"/>
               <p class="p-skills text-center">Javascript</p>
             </li>
             <li>
-              <img class="img-responsive " src="assets/icons/jquery.png" alt="jquery"/>
+              <img class="img-responsive " src="assets/icons/jquery.png" alt="jquery" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal"/>
               <p class="p-skills text-center">Jquery</p>
             </li>
             <li>
-              <img class="img-responsive " src="assets/icons/HTML5.png" alt="html5"/>
+              <img class="img-responsive " src="assets/icons/HTML5.png" alt="html5" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal"/>
               <p class="p-skills text-center">HTML5</p>
             </li>
             <li>
-              <img class="img-responsive " src="assets/icons/css3.png" alt="css3"/>
+              <img class="img-responsive " src="assets/icons/css3.png" alt="css3"  data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal"/>
               <p class="p-skills text-center">CSS3</p>
             </li>
             <li>
-              <img class="img-responsive " src="assets/icons/sass.png" alt="sass"/>
+              <img class="img-responsive " src="assets/icons/sass.png" alt="sass"  data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal"/>
               <p class="p-skills text-center">SASS</p>
             </li>
             <li>
-              <img class="img-responsive " src="assets/icons/bootstrap.png" alt="bootstrap"/>
+              <img class="img-responsive " src="assets/icons/bootstrap.png" alt="bootstrap" data-anijs="if: scroll, on: window, do: bounceIn animated, before: $scrollReveal"/>
               <p class="p-skills text-center">BOOTSTRAP</p>
             </li>
           </ul>
@@ -195,6 +196,8 @@
   <script src='js/vendor/bootstrap.min.js'></script>
   <script src="owlCarousel/dist/owl.carousel.min.js"></script>
   <script src="js/owl.js" charset="utf-8"></script>
+  <script src="js/vendor/anijs.js"></script>
+  <script src="js/vendor/anijs-helper-scrollreveal-min.js"></script>
   <script src="js/scroll.js" charset="utf-8"></script>
   <script src="js/main.js" charset="utf-8"></script>
 

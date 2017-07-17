@@ -14,8 +14,6 @@ $(_ => {
     $('nav').toggleClass('show');
   });
 
-  //Con este intento cerrarlo dando click afuera del menú:
-
   $('.contenedor').on('click', _ => {$('nav').removeClass('show');});
   $('#about').on('click', _ => {$('nav').removeClass('show');});
   $('#portafolio').on('click', _ => {$('nav').removeClass('show');});
