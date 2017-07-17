@@ -265,8 +265,8 @@ $count:0;
 /***************************PORTAFOLIO********************/
 #portafolio{
   background-image: url('../assets/img/bg3.png');
-  height: 100vh;
   overflow: hidden;
+  padding-bottom: 2em;
 }
 .content-figure-portfolio {
 	overflow: hidden;
@@ -352,9 +352,9 @@ figure.figure-portafolio:hover .description-figure {
 @media screen and (max-width: 69.5em) {
 	.content-figure-portfolio figure {
 		width: 50%;
-	}
-	.content-figure-portfolio figure figcaption {
-		font-size: 90%;
+    figcaption {
+  		font-size: 90%;
+  	}
 	}
 }
 @media screen and (max-width: 41.5em) {
@@ -365,13 +365,47 @@ figure.figure-portafolio:hover .description-figure {
 /********************CONTACT***********************/
 #contact{
   overflow: hidden;
+  color: $white;
+  p{
+    font-size: 1.3em;
+    text-align: justify;
+  }
+  ul li{
+    list-style: none;
+    span{
+      font-size: x-large;
+      padding-right: 1em;
+      &:hover{
+        color: $orange-light;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+    }
+    span+p{
+      display: inline-block;
+    }
+  }
 }
 .bg-item-contact{
   background-color: rgba(76,75,75,0.7);
-  height: 70vh;
+  height: auto;
   width: 100%;
-  padding: 3em;
+  padding: .1em;
 }
 .itemImg1-contact {
     @include make-image(contact, jpeg, no-repeat, cover, relative , center bottom);
+}
+/**********footer styles*******/
+footer {
+  color: white;
+}
+footer h3 {
+  margin-bottom: 30px;
+}
+footer .footer-col {
+  margin-bottom: 50px;
+}
+footer .footer-below {
+  padding: 25px 0;
+  background-color: $grey-dark;
 }
