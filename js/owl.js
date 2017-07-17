@@ -8,6 +8,7 @@ $(document).ready(function(){
     dots: false,
     animateIn: 'fadeIn',
     animateOut: 'fadeOut',
+    singleItem: true,
     responsive: {
         0: {
             items: 1

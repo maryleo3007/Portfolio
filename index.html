@@ -10,31 +10,28 @@
   <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="assets/fonts/style.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/portafolio.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
 <body>
-
   <!-- section home portafolio-->
-  <section id="home">
-    <nav class="navbar navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand anchorlogo" href="#">
-              <img class="neatlogo img-circle" src="assets/img/logo2.png" alt="">
-            </a>
-          </div>
-          <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a  class="anchorNav" href="#">Acerca de mi</a></li>
-              <li><a class="anchorNav"  href="#">Portafolio</a></li>
-              <li><a  class="anchorNav" href="#">Contacto</a></li>
-            </ul>
-          </div>
-        </div>
+  <section id="home" class="parallax">
+    <div id="nav-header" class="navbar-fixed-top">
+      <div id="show-nav"></div>
+      <img src="assets/img/logo2.png" class="img-circle logo" alt="">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href=""><span class="icon-home"></span>HOME</a> </li>
+        <li><a href=""><span class="icon-profile"></span>ACERCA DE MI</a></li>
+        <li><a href=""><span class="icon-book"></span>PROYECTOS</a></li>
+        <li><a href=""><span class="icon-user-tie"></span>CONTACTO</a></li>
+        <li><a href="https://github.com/maryleo3007"><span class="icon-github"></span>GITHUB</a></li>
+        <li><a href="https://www.linkedin.com/in/maril%C3%BA-llamocca-junco/"><span class="icon-linkedin"></span>LINKED IN</a></li>
+        <li><a href="https://twitter.com/marilu_llamocca"><span class="icon-twitter"></span>TWITTER</a></li>
+      </ul>
     </nav>
+
     <div class="contenedor">
       <div class="owl-carousel owl-theme">
         <div class="item">
@@ -65,8 +62,8 @@
     </div>
   </section>
   <!-- section about -->
-  <section id="about" class="bg-grey">
-    <h1 class="text-center"> Desarrollador Web Front-end</h1>
+  <section id="about" class="parallax">
+    <h2 class="text-center"> Desarrollador Web Front-end</h2>
     <p class="text-center description-about">Bienvenidos a mi portafolio online. Aquí encontrarás algunos de mis proyectos realizados en Laboratoria, y algunos proyectos personales donde pongo en práctica mis habilidades de desarrollador web front-end y donde podrás saber algo más acerca de mi.</p>
     <hr>
     <div class="container">
@@ -77,39 +74,38 @@
             con interacciones y responsivas.
           </p>
           <h3 class="color-org">Mis reconocimientos en Labratoria</h3>
-          <p>Hola, soy Marilu Llamocca Junco egresada de la 6ta promoción de Laboratoria, bachiller en Ingenieria de Sistemas. Me apasiona crear nuevas aplicaciones web
-            con interacciones y responsivas.
-          </p>
+          <img class="img-circle" src="assets/img/agile.png" alt="agile"/>
+          <img class="img-circle" src="assets/img/team.png" alt="team"/>
         </div>
         <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
           <h3 class="color-org">Habilidades</h3>
           <ul class="ul-skills">
             <li>
-              <img class="img-responsive icons-skills" src="assets/icons/scrum.png" alt="scrum"/>
+              <img class="img-responsive " src="assets/icons/scrum.png" alt="scrum"/>
               <p class="p-skills text-center">Agile Scrum</p>
             </li>
             <li>
-              <img class="img-responsive icons-skills" src="assets/icons/javacript.png" alt="Javascript"/>
+              <img class="img-responsive " src="assets/icons/javacript.png" alt="Javascript"/>
               <p class="p-skills text-center">Javascript</p>
             </li>
             <li>
-              <img class="img-responsive icons-skills" src="assets/icons/jquery.png" alt="jquery"/>
+              <img class="img-responsive " src="assets/icons/jquery.png" alt="jquery"/>
               <p class="p-skills text-center">Jquery</p>
             </li>
             <li>
-              <img class="img-responsive icons-skills" src="assets/icons/HTML5.png" alt="html5"/>
+              <img class="img-responsive " src="assets/icons/HTML5.png" alt="html5"/>
               <p class="p-skills text-center">HTML5</p>
             </li>
             <li>
-              <img class="img-responsive icons-skills" src="assets/icons/css3.png" alt="css3"/>
+              <img class="img-responsive " src="assets/icons/css3.png" alt="css3"/>
               <p class="p-skills text-center">CSS3</p>
             </li>
             <li>
-              <img class="img-responsive icons-skills" src="assets/icons/sass.png" alt="sass"/>
+              <img class="img-responsive " src="assets/icons/sass.png" alt="sass"/>
               <p class="p-skills text-center">SASS</p>
             </li>
             <li>
-              <img class="img-responsive icons-skills" src="assets/icons/bootstrap.png" alt="bootstrap"/>
+              <img class="img-responsive " src="assets/icons/bootstrap.png" alt="bootstrap"/>
               <p class="p-skills text-center">BOOTSTRAP</p>
             </li>
           </ul>
@@ -118,7 +114,7 @@
     </div>
   </section>
   <!-- section portafolio -->
-  <section id="portafolio">
+  <section id="portafolio" class="parallax">
     <h2 class="text-center"> Mis Proyectos</h2>
     <div class="container">
     			<div class="content-figure-portfolio">
@@ -127,7 +123,7 @@
     					<figcaption>
     						<p class="description-figure">Descripcion del proyecto</p>
     						<span class="icon-github"></span>
-    						<h3 class="title-figure">TITULO DEL PROYECTO</h3>
+    						<h3 class="title-figure">DESCRIPCION DEL PROYECTO</h3>
     						<a href="#">Ver demo</a>
     					</figcaption>
     				</figure>
@@ -136,43 +132,16 @@
     					<figcaption>
     						<p class="description-figure">Descripcion del proyecto</p>
     						<span class="icon-github"></span>
-    						<h3 class="title-figure">TITULO DEL PROYECTO</h3>
+    						<h3 class="title-figure">DESCRIPCION DEL PROYECTO</h3>
     						<a href="#">Ver demo</a>
     					</figcaption>
     				</figure>
             <figure class="figure-portafolio">
-    					<img class="img-responsive" src="assets/img/gasfinder.jpg" alt="gas-finder"/>
+    					<img class="img-responsive" src="assets/img/labcar.png" alt="labcar"/>
     					<figcaption>
     						<p class="description-figure">Descripcion del proyecto</p>
     						<span class="icon-github"></span>
-    						<h3 class="title-figure">TITULO DEL PROYECTO</3>
-    						<a href="#">Ver demo</a>
-    					</figcaption>
-    				</figure>
-            <figure class="figure-portafolio">
-    					<img class="img-responsive" src="assets/img/gasfinder.jpg" alt="gas-finder"/>
-    					<figcaption>
-    						<p class="description-figure">Descripcion del proyecto</p>
-    						<span class="icon-github"></span>
-    						<h3 class="title-figure">TITULO DEL PROYECTO</3>
-    						<a href="#">Ver demo</a>
-    					</figcaption>
-    				</figure>
-            <figure class="figure-portafolio">
-    					<img class="img-responsive" src="assets/img/gasfinder.jpg" alt="gas-finder"/>
-    					<figcaption>
-    						<p class="description-figure">Descripcion del proyecto</p>
-    						<span class="icon-github"></span>
-    						<h3 class="title-figure">TITULO DEL PROYECTO</3>
-    						<a href="#">Ver demo</a>
-    					</figcaption>
-    				</figure>
-            <figure class="figure-portafolio">
-    					<img class="img-responsive" src="assets/img/gasfinder.jpg" alt="gas-finder"/>
-    					<figcaption>
-    						<p class="description-figure">Descripcion del proyecto</p>
-    						<span class="icon-github"></span>
-    						<h3 class="title-figure">TITULO DEL PROYECTO</h3>
+    						<h3 class="title-figure">DESCRIPCION DEL PROYECTO</h3>
     						<a href="#">Ver demo</a>
     					</figcaption>
     				</figure>

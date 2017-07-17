@@ -69,6 +69,12 @@
 .icon-film:before {
   content: "\e913";
 }
+.icon-bubbles3:before {
+  content: "\e96f";
+}
+.icon-user:before {
+  content: "\e971";
+}
 .icon-video-camera:before {
   content: "\e914";
 }
