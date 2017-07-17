@@ -26,6 +26,8 @@ h2{
   margin:2.1em 0 1.6rem;
   color: $orange-light; //#F05941; /*:*/
   font-weight: 600;
+  @media (max-width: 41.5em) { font-size: 2.4em;}
+  @media screen and (max-width: 69.5em) { font-size: 2.6em; }
 }
 h3{
   font-weight: 600;
@@ -128,13 +130,16 @@ nav.show{
   height: 100vh;
   width: 100%;
   padding-top: 10%;
-  padding-left: 45%;
-  @media (max-width: 748px) {
-    padding-top: 40%;
-    padding-left: 35%;
+  padding-left: 40%;
+  @media (max-width: 41.5em) {
+    padding-top: 35%;
+    padding-left: 25%;
+  }
+  @media screen and (max-width: 69.5em) {
+    padding-top: 15%;
+    padding-left: 20%;
   }
 }
-
 $count:0;
 @each $images in fondo, foto2, foto3{
   $count: $count +1;
@@ -154,13 +159,14 @@ $count:0;
 .myName{
   color: $pink-light; /*$pink-light*/
   font-family: $font-pacifico;
-  font-size: 4.2em;
+  font-size: 5.1em;
+  @media screen and (max-width: 41.5em) {font-size: 3.8em; }
+  @media screen and (max-width: 69.5em) {font-size: 4.3em; }
 }
 .letter-spacing{
   width: 100%;
   height: 42px;
   margin-left: 15%;
-  font-size: 2.5em;
   position: absolute;
   top: calc(50% - 21px);
   left: 0;
@@ -171,11 +177,15 @@ $count:0;
   opacity: 0;
   animation: name 3s ease-out forwards infinite;
   animation-delay: 1s;
-  @media (max-width: 748px) {
+  @media (max-width: 41.5em) {
     margin-left: 5%;
     top: calc(65% - 21px);
     font: 300 26px/1 "Open sans condensed", sans-serif;
   }
+  @media screen and (max-width: 69.5em) {
+    margin-left: 6%;
+    top: calc(55% - 21px);
+    font: 300 60px/1 "Open sans condensed", sans-serif; }
 }
 @keyframes name{
   0%{
@@ -191,7 +201,7 @@ $count:0;
     opacity: 1;
   }
 }
-@media only screen and (max-width: 748px) {
+@media only screen and (max-width: 41.5em) {
   .titleintro img{
     width: 120px;
     margin-left: 38%;
@@ -222,12 +232,12 @@ $count:0;
   color:$purple-dark; /*$purple-dark:*/
   background-image: url('../assets/img/pexels.png');
   overflow: hidden;
-  @media (max-width: 748px) { height: 160vh;}
+  @media (max-width: 41.5em) { height: 180vh;}
   p{
     font-size: 1.5em;
     line-height: 1.4;
     font-weight: 600;
-    @media (max-width: 748px) {font-size: 1.2em;}
+    @media (max-width: 41.5em) {font-size: 1.2em;}
   }
 }
 .p-skills{
@@ -236,18 +246,20 @@ $count:0;
 .description-about{
   width: 40%;
   margin: auto;
-  @media (max-width: 748px) {width: 70%;}
+  @media (max-width: 41.5em) {width: 70%;}
+  @media (max-width: 69.5em) {width: 80%;}
 }
 .ul-skills{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  @media (max-width: 41.5em) {padding: 0}
   li{
     list-style: none;
     width: 100px;
     margin: 10px;
-    @media (max-width: 748px) {width: 65px;
+    @media (max-width: 41.5em) {width: 65px;
     margin: 4px;}
   }
 }
@@ -350,4 +362,10 @@ figure.figure-portafolio:hover .description-figure {
 	.content-figure-portfolio figure {
 		width: 100%;
 	}
+}
+/********************CONTACT***********************/
+#contact{
+  background-image: url('../assets/img/contact.jpeg');
+  overflow: hidden;
+  height: 70vh;
 }
