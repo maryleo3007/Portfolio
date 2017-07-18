@@ -32,6 +32,7 @@ h2{
 }
 h3{
   font-weight: 600;
+  text-transform: uppercase;
 }
 .parallax{
   @include bg-atach;
@@ -41,7 +42,7 @@ h3{
 }
 /****************** NAVBAR *******************/
 #home{
-  background: rgba(190,49,68,0.5);
+  background: rgba(0,0,0,0.01);
 }
 /*STYLES MENU*/
 .menu{
@@ -70,6 +71,7 @@ h3{
     box-shadow: 3px 0 rgba(255,255,255,0.2) inset;
     margin: 5px;
     margin-top: 0;
+    padding-top: 5px;
     padding-left: 1.5em;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -84,7 +86,7 @@ nav{
   background: $purple-dark;
   //position: absolute;
   left: -21em;
-  height: 95vh;
+  height: 100vh;
   position: fixed;
   padding-right: .25em;
   padding-top: 4.5em;
@@ -149,7 +151,7 @@ $count:0;
   }
 }
 .contenedor{
-  height: 95vh;
+  height: 100vh;
   overflow: hidden;
   background-color: rgba(125,114,113,0.5);
 }
@@ -234,8 +236,9 @@ $count:0;
   overflow: hidden;
   @media (max-width: 41.5em) { height: 180vh;}
   p{
-    font-size: 1.5em;
+    font-size: 1.3em;
     line-height: 1.4;
+    text-align: justify;
     @media (max-width: 41.5em) {font-size: 1.2em;}
   }
 }
@@ -248,7 +251,7 @@ $count:0;
   font-size: 1.2em !important;
 }
 .description-about{
-  width: 40%;
+  width: 50%;
   margin: auto;
   @media (max-width: 41.5em) {width: 70%;}
   @media (max-width: 69.5em) {width: 80%;}
@@ -290,8 +293,8 @@ $count:0;
 }
 /***************************PORTAFOLIO********************/
 #portafolio{
-  background-image: url('../assets/img/bg3.png');
-  // background-color: $white;
+  //background-image: url('../assets/img/bg3.png');
+  background-color: rgba(0,0,0,0.01);
   overflow: hidden;
   padding-bottom: 2em;
 }
@@ -397,7 +400,7 @@ figure.figure-portafolio:hover .description-figure {
     text-align: justify;
   }
   h2{
-    text-shadow: 3px 1px 11px $white;
+    text-shadow: 1px 1px 1px $white;
   }
   ul li{
     list-style: none;

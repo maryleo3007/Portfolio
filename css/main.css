@@ -3,7 +3,7 @@
   background-color: #F1F1F1; }
 
 .color-org {
-  color: #F05941; }
+  color: #FF5722; }
 
 .border-blue {
   border-bottom: 4px solid #2F1B41; }
@@ -18,7 +18,7 @@ h2 {
   font-size: 2.7em;
   margin: 0 0 1.6rem;
   padding-top: 2.1em;
-  color: #F05941;
+  color: #FF5722;
   font-weight: 600; }
   @media (max-width: 41.5em) {
     h2 {
@@ -28,18 +28,19 @@ h2 {
       font-size: 2.6em; } }
 
 h3 {
-  font-weight: 600; }
+  font-weight: 600;
+  text-transform: uppercase; }
 
 .parallax {
   background: #ffffff fixed no-repeat 50% 50%;
   background-size: cover; }
 
 .bg-purple-dark {
-  background-color: #2F1B41; }
+  background-color: #303841; }
 
 /****************** NAVBAR *******************/
 #home {
-  background: rgba(190, 49, 68, 0.5); }
+  background: rgba(0, 0, 0, 0.01); }
 
 /*STYLES MENU*/
 .menu {
@@ -64,6 +65,7 @@ h3 {
     box-shadow: 3px 0 rgba(255, 255, 255, 0.2) inset;
     margin: 5px;
     margin-top: 0;
+    padding-top: 5px;
     padding-left: 1.5em;
     -webkit-transition: all 0.3s;
     transition: all 0.3s; }
@@ -72,9 +74,9 @@ h3 {
 
 /*MENU RESPONSIVE*/
 nav {
-  background: #2F1B41;
+  background: #303841;
   left: -21em;
-  height: 95vh;
+  height: 100vh;
   position: fixed;
   padding-right: .25em;
   padding-top: 4.5em;
@@ -103,7 +105,7 @@ nav.show {
   height: 70px;
   width: 100%;
   z-index: 30;
-  background-color: #2F1B41;
+  background-color: #303841;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -155,7 +157,7 @@ nav.show {
   background-position: center bottom; }
 
 .contenedor {
-  height: 95vh;
+  height: 100vh;
   overflow: hidden;
   background-color: rgba(125, 114, 113, 0.5); }
 
@@ -236,7 +238,7 @@ nav.show {
 /***************ABOUT*******************/
 #about {
   height: 130vh;
-  color: #2F1B41;
+  color: #303841;
   /*$purple-dark:*/
   background-image: url("../assets/img/82.jpg");
   overflow: hidden; }
@@ -244,8 +246,9 @@ nav.show {
     #about {
       height: 180vh; } }
   #about p {
-    font-size: 1.5em;
-    line-height: 1.4; }
+    font-size: 1.3em;
+    line-height: 1.4;
+    text-align: justify; }
     @media (max-width: 41.5em) {
       #about p {
         font-size: 1.2em; } }
@@ -258,7 +261,7 @@ nav.show {
   font-size: 1.2em !important; }
 
 .description-about {
-  width: 40%;
+  width: 50%;
   margin: auto; }
   @media (max-width: 41.5em) {
     .description-about {
@@ -296,7 +299,7 @@ nav.show {
     transform: none; } }
 /***************************PORTAFOLIO********************/
 #portafolio {
-  background-image: url("../assets/img/bg3.png");
+  background-color: rgba(0, 0, 0, 0.01);
   overflow: hidden;
   padding-bottom: 2em; }
 
@@ -341,7 +344,7 @@ figure.figure-portafolio figcaption {
   padding: 1em;
   height: 10.75em;
   background: #ffffff;
-  color: #2F1B41;
+  color: #303841;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
   -webkit-transform: translate3d(0, 100%, 0);
@@ -391,14 +394,14 @@ figure.figure-portafolio:hover .description-figure {
     font-size: 1.3em;
     text-align: justify; }
   #contact h2 {
-    text-shadow: 3px 1px 11px #ffffff; }
+    text-shadow: 1px 1px 1px #ffffff; }
   #contact ul li {
     list-style: none; }
     #contact ul li span {
       font-size: x-large;
       padding-right: 1em; }
       #contact ul li span:hover {
-        color: #F05941;
+        color: #FF5722;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
     #contact ul li span + p {
@@ -429,6 +432,6 @@ footer .footer-col {
 
 footer .footer-below {
   padding: 25px 0;
-  background-color: #2F1B41; }
+  background-color: #303841; }
 
 /*# sourceMappingURL=main.css.map */
