@@ -461,7 +461,7 @@ figure.figure-portafolio:hover .description-figure {
     text-align: justify;
   }
   h2{
-    text-shadow: 1px 1px 1px $white;
+    text-shadow: 0.5px 0.5px 0.5px $white;
   }
   ul li{
     list-style: none;
@@ -491,6 +491,48 @@ figure.figure-portafolio:hover .description-figure {
 .itemImg1-contact {
     @include make-image(contact, jpeg, no-repeat, cover, relative , center bottom);
 }
+.cv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0 5em;
+  .button {
+      position: relative;
+      display: inline-block;
+      padding: 25px 30px;
+      background: transparent;
+      text-transform: uppercase;
+      color: $white;
+      letter-spacing: 3px;
+      z-index: 1;
+      // opacity: .8;
+      &:after, &:before {
+        mix-blend-mode: multiply;
+        content: "";
+        position: absolute;
+        display: block;
+        background: $orange-light;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        top: 5px;
+        left: 5px;
+        transition: all .3s ease-in-out;
+      }
+      &:after {
+        background: $purple-dark;
+        top: -5px;
+        left: -5px;
+      }
+      &:hover:after, &:hover:before {
+        top: 0px;
+        left: 0px;
+      }
+    }
+}
+
+
 /**********footer styles*******/
 footer {
   color: white;
