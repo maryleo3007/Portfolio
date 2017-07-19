@@ -259,7 +259,7 @@ nav.show {
 .btn-1 {
   background: transparent;
   font-weight: 100;
-  margin-top: 20em;
+  margin-top: 18em;
   margin-right: 2em; }
   .btn-1 svg {
     height: 45px;
@@ -289,7 +289,7 @@ nav.show {
 
 /***************ABOUT*******************/
 #about {
-  height: 100vh;
+  height: 101vh;
   color: #303841;
   /*$purple-dark:*/
   background-image: url("../assets/img/82.jpg");
@@ -313,7 +313,7 @@ nav.show {
 
 .p-skills {
   font-size: 1.2em !important;
-  text-align: center; }
+  text-align: center !important; }
 
 .description-about {
   width: 50%;
@@ -362,7 +362,7 @@ nav.show {
 .content-figure-portfolio {
   overflow: hidden;
   margin: 0;
-  padding: 0 0 0 0;
+  padding: 0 0 4em 0;
   width: 100%;
   text-align: center; }
   .content-figure-portfolio figure {

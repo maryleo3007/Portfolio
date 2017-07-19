@@ -251,7 +251,7 @@ $count:0;
 .btn-1 {
   background: darken(transparent, 1.5%);
   font-weight: 100;
-  margin-top: 20em;
+  margin-top: 18em;
   margin-right: 2em;
   svg {
     height: 45px;
@@ -284,7 +284,7 @@ $count:0;
 }
 /***************ABOUT*******************/
 #about{
-  height: 100vh;
+  height: 101vh;
   color:$purple-dark; /*$purple-dark:*/
   background-image: url('../assets/img/82.jpg');
   overflow: hidden;
@@ -303,7 +303,7 @@ $count:0;
 }
 .p-skills{
   font-size: 1.2em !important;
-  text-align: center;
+  text-align: center !important;
 }
 .description-about{
   width: 50%;
@@ -358,7 +358,7 @@ $count:0;
 .content-figure-portfolio {
 	overflow: hidden;
 	margin: 0;
-	padding: 0 0 0 0;
+	padding: 0 0 4em 0;
 	width: 100%;
 	text-align: center;
   figure{
