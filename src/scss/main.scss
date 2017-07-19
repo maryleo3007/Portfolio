@@ -33,6 +33,11 @@ h2{
 h3{
   font-weight: 600;
   text-transform: uppercase;
+  color: $orange-light;
+}
+a{
+  text-decoration: none;
+  &:hover{text-decoration: none;}
 }
 .parallax{
   @include bg-atach;
@@ -53,8 +58,8 @@ h3{
   margin: .6em auto;
   a{
     color: $white;
-    text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
@@ -228,9 +233,59 @@ $count:0;
     height: 450px;
   }
 }
+//buttons
+.btn {
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  &:hover { text-decoration: none; }
+}
+
+.btn-1 {
+  background: darken(transparent, 1.5%);
+  font-weight: 100;
+  margin-top: 20em;
+  margin-right: 2em;
+  svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border-radius: 5px;
+  }
+  rect {
+    fill: none;
+    stroke: $white;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+  }
+  span{margin-right: 10px;}
+}
+
+.btn-1:hover {
+  background: rgba(transparent, 0);
+  color: $white;
+  font-weight: 600;
+  letter-spacing: 1px;
+  rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
 /***************ABOUT*******************/
 #about{
-  height: 130vh;
+  height: 100vh;
   color:$purple-dark; /*$purple-dark:*/
   background-image: url('../assets/img/82.jpg');
   overflow: hidden;
@@ -241,12 +296,12 @@ $count:0;
     text-align: justify;
     @media (max-width: 41.5em) {font-size: 1.2em;}
   }
+  .habilidades{margin-left: 10px;}
 }
 .about-capa{
   background: rgba(255,255,255,0.8);
   height: 130vh;
 }
-
 .p-skills{
   font-size: 1.2em !important;
 }
@@ -257,15 +312,17 @@ $count:0;
   @media (max-width: 69.5em) {width: 80%;}
 }
 .ul-skills{
+  padding: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+
   @media (max-width: 41.5em) {padding: 0}
     li{
       list-style: none;
       width: 100px;
-      margin: 10px;
+      margin-right: 20px;
       @media (max-width: 41.5em) {width: 65px; margin: 4px; }
       img{
           &:hover {
@@ -294,7 +351,7 @@ $count:0;
 /***************************PORTAFOLIO********************/
 #portafolio{
   //background-image: url('../assets/img/bg3.png');
-  background-color: rgba(0,0,0,0.01);
+  background-color: rgba(0,0,0,0.02);
   overflow: hidden;
   padding-bottom: 2em;
 }
@@ -315,6 +372,7 @@ $count:0;
   	background: #000;
   	text-align: center;
   	cursor: pointer;
+    box-shadow: 2px 2px 2px;;
     img{
       position: relative;
     	display: block;
@@ -323,7 +381,7 @@ $count:0;
     }
     figcaption{
       padding: 0.2em;
-    	font-size: 1.25em;
+    	font-size: 1.1em;
     	-webkit-backface-visibility: hidden;
     	backface-visibility: hidden;
       position: absolute;
@@ -342,8 +400,9 @@ figure.figure-portafolio figcaption {
 	top: auto;
 	bottom: 0;
 	padding: 1em;
-	height: 10.75em;
+	height: 15.8em;
 	background: $white;
+
 	color: $purple-dark;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
@@ -352,15 +411,17 @@ figure.figure-portafolio figcaption {
 }
 figure.figure-portafolio .title-figure {
 	position: absolute;
-	bottom: 13em;
-	padding: 0.1em;
+  bottom: 17em;
+  padding: 0.1em;
+  font-size: 1em;
 	color: $white;
-	font-size: 90%;
 	opacity: 1;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 }
 figure.figure-portafolio .description-figure {
+  text-align: justify;
+  margin-bottom: 12px;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
 	-webkit-transform: translate3d(0,200%,0);
@@ -404,6 +465,9 @@ figure.figure-portafolio:hover .description-figure {
   }
   ul li{
     list-style: none;
+    a{
+      color: $white;
+    }
     span{
       font-size: x-large;
       padding-right: 1em;
