@@ -171,7 +171,7 @@ nav.show {
   width: auto; }
 
 .myName {
-  color: #FFFDEF;
+  color: #ffffff;
   /*$pink-light*/
   font-family: "Pacifico", cursive;
   font-size: 4.8em; }
@@ -192,7 +192,7 @@ nav.show {
   text-transform: uppercase;
   text-align: center;
   font: 300 42px/1 "Open sans condensed", sans-serif;
-  color: #FFFDEF;
+  color: #ffffff;
   /*$pink-light*/
   opacity: 0;
   animation: name 3s ease-in forwards infinite;
@@ -312,7 +312,8 @@ nav.show {
   height: 130vh; }
 
 .p-skills {
-  font-size: 1.2em !important; }
+  font-size: 1.2em !important;
+  text-align: center; }
 
 .description-about {
   width: 50%;
@@ -495,6 +496,11 @@ figure.figure-portafolio:hover .description-figure {
     color: #ffffff;
     letter-spacing: 3px;
     z-index: 1; }
+    .cv .button .icon-download {
+      padding-right: 10px;
+      font-size: 1.6em; }
+    .cv .button a {
+      color: #ffffff; }
     .cv .button:after, .cv .button:before {
       mix-blend-mode: multiply;
       content: "";
@@ -508,7 +514,7 @@ figure.figure-portafolio:hover .description-figure {
       left: 5px;
       transition: all .3s ease-in-out; }
     .cv .button:after {
-      background: #303841;
+      background: #00ADB5;
       top: -5px;
       left: -5px; }
     .cv .button:hover:after, .cv .button:hover:before {

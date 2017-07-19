@@ -84,7 +84,6 @@ a{
         box-shadow: 20em 0 rgba(255,255,255,0.5) inset;
     }
   }
-
 }
 /*MENU RESPONSIVE*/
 nav{
@@ -164,7 +163,7 @@ $count:0;
   width: auto;
 }
 .myName{
-  color: $pink-light; /*$pink-light*/
+  color: $white; /*$pink-light*/
   font-family: $font-pacifico;
   font-size: 4.8em;
   @media screen and (max-width: 69.5em) {font-size: 5.8em; }
@@ -180,7 +179,7 @@ $count:0;
   text-transform: uppercase;
   text-align: center;
   font: 300  #{42px}/#{1} $font-open;
-  color:$pink-light;/*$pink-light*/
+  color:$white;/*$pink-light*/
   opacity: 0;
   animation: name 3s ease-in forwards infinite;
   animation-delay: 1s;
@@ -304,6 +303,7 @@ $count:0;
 }
 .p-skills{
   font-size: 1.2em !important;
+  text-align: center;
 }
 .description-about{
   width: 50%;
@@ -506,6 +506,8 @@ figure.figure-portafolio:hover .description-figure {
       color: $white;
       letter-spacing: 3px;
       z-index: 1;
+      .icon-download{padding-right: 10px;font-size: 1.6em;}
+      a{color: $white;}
       // opacity: .8;
       &:after, &:before {
         mix-blend-mode: multiply;
@@ -519,9 +521,10 @@ figure.figure-portafolio:hover .description-figure {
         top: 5px;
         left: 5px;
         transition: all .3s ease-in-out;
+
       }
       &:after {
-        background: $purple-dark;
+        background: $sky-blue;
         top: -5px;
         left: -5px;
       }
