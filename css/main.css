@@ -514,7 +514,7 @@ figure.figure-portafolio:hover .description-figure {
       left: 5px;
       transition: all .3s ease-in-out; }
     .cv .button:after {
-      background: #00ADB5;
+      background: #303841;
       top: -5px;
       left: -5px; }
     .cv .button:hover:after, .cv .button:hover:before {
